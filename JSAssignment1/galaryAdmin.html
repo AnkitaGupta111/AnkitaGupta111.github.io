@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/image-grid.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h2
+{
+text-align: center;
+background-color: rgb(130, 198, 201);
+}
+</style>
+</head>
+
+<body>
+
+<h2>welcome admin</h2>
+
+<button class="addButton" onclick="popUpForm(this)"><i class="fa fa-plus" style="color:green"></i>Add images</button>
+<div id="grid"></div>
+
+<div id="form-popup">
+      
+    <button class="close" onclick="closeForm()"><i class="fa fa-close"></i></button>
+    <button class="btn browseBtn" onclick="window.open('https://www.google.com/search?q=images&client=ubuntu&hs=D2X&channel=fs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwimmoWcgfXiAhULiHAKHbK7CfcQ_AUIECgB&biw=1301&bih=647')"><i class="fa fa-external-link" style="font-size:30px;color: rgb(8, 14, 8)"></i><b>Browse Image</b></button>
+        <div  class="form-container">
+          <h1>Add details</h1>
+      <div id="nameDiv">
+          <label for="name"><b>Name:</b></label>
+          <input type="text" placeholder="Enter name of image" name="name" required>
+      </div>
+      <div id="urlDiv">
+          <label for="url"><b>URL:</b></label>
+          <input type="text" placeholder="Enter url of image" name="url" required><label id='invalid-url'></label>
+      </div>
+      <div id="descdiv">
+          <label for="desc"><b>Description:</b></label>
+          <textarea name="desc" placeholder="Enter description about image" required></textarea>
+</div>
+<div id="btnDiv">
+    <button class="btn" onclick="addImage()">Add</button>
+</div>
+</div>
+      </div>
+      
+
+
+
+
+
+
+
+</body>
+
+<script src="./scripts/loadImages.js"></script>
+<script src="./scripts/form.js"></script>
+</html>

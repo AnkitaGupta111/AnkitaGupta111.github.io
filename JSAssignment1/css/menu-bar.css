@@ -1,0 +1,30 @@
+ li
+    {
+float: left;
+    }
+    ul
+    {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+    }
+    body
+    {
+        margin: 0;
+       
+    }
+    a:hover{
+  background-color: rgb(70, 67, 67);
+}
+a
+{
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
