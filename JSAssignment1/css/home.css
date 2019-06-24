@@ -1,0 +1,45 @@
+.bgimg {
+   
+    height: 100%;
+   width: 100%;
+  }
+
+  .display-middle
+  {
+      position:absolute;
+      top: 30%;
+      left: 20%;
+  }
+  .text-white
+  {
+    font-family:Arial;;
+      color:white;
+      font-size: 60px;
+  }
+  .text-small
+  {
+    font-family: sans-serif;
+      color:white;
+      font-size: 30px;
+      text-align: center;
+  }
+  @keyframes opacity
+  {
+      0%{opacity: 0}
+      100%{opacity: 1}
+  }
+  @keyframes top-to-curr
+  {
+      0%{top:0%};
+      100%{top:30%};
+  }
+  .animate-opacity
+  {
+      animation-name: opacity;
+      animation-duration: 2s;
+  }
+  .animate-top
+  {
+      animation-name: top-to-curr;
+animation-duration: 2s;
+  }

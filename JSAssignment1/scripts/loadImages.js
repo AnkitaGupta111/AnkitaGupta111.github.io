@@ -30,7 +30,7 @@ if(filename=="galaryAdmin.html")
 else
 if(filename=="galary.html")
 {
-imag+="<div class='desc'>"+img.name+"</div></div>";
+imag+="<div class='name'>"+img.name+"</div></div>";
 }
 gridDiv.innerHTML+=imag;
 
