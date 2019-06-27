@@ -1,0 +1,16 @@
+.standard
+{
+display: inline;
+padding: 20px;
+text-align: center;
+}
+.listWindow
+{
+height:50%;
+border-radius:10px;
+
+}
+.header
+{
+    background-color: rgb(46, 94, 184);
+}

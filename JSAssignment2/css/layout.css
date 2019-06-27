@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  
+
+  }
+
+  /* Create two div block  that floats next to each other */
+  [class*="col"]{
+    float: left; 
+    padding: 10px; 
+   overflow:auto;
+
+  }
+  .col1
+  {
+      width:30%;
+  }
+  .col2
+  {
+      width:70%;
+      border-left:3px solid rgb(17, 17, 17); 
+  
+  }
+.row
+{
+    height: 100%;
+}
+   
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media only screen and (max-width: 600px) {
+    .col1,.col2{
+      width: 100%;
+    }
+    .col2
+    {
+      border-left:none;
+      border-top:3px solid rgb(17, 17, 17); 
+    }
+  
+  }
+  .card
+  {
+    box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.4);
+padding: 16px;
+margin: 10px;
+  }
+.card:hover
+{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.6);
+}
+i
+{     position: relative;
+        
+        left: -30px;
+       
+        color: #7B7B7B;
+        cursor:pointer;
+           
+}
+input
+{
+    width: 60%;
+    border: none;
+}

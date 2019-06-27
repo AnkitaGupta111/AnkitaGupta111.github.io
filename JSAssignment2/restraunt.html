@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="import" href="listWindow.html">
+<link rel="stylesheet" href="./css/form.css">
+<link rel="stylesheet" href="./css/layout.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<h2>Restaurant Application</h2>
+
+<div class="row">
+  <div class="col1">
+    <h2>Tables</h2>
+    <input type="text" class="card"><i class="fa fa-search"></i>
+<div class='tables-list'></div>
+
+
+  </div>
+  <div class="col2">
+      <h2>Menu</h2>
+      <input type="text" class="card"><i class="fa fa-search"></i>
+<div class='food-menu'></div>
+
+
+
+</div>
+<script src="./scripts/loadMenu.js"></script>
+<script src="./scripts/fetchTables.js"></script>
+<script src="./scripts/tables.js"></script>
+</body>
+</html>
