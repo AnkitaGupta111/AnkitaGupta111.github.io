@@ -1,16 +1,112 @@
-.standard
+ul
 {
-display: inline;
-padding: 20px;
-text-align: center;
+padding: 5px;
+list-style-type: none;
+margin: 0px;
 }
-.listWindow
+li
 {
-height:50%;
-border-radius:10px;
-
+display: inline-block;
+padding: 10px;
+margin: 10px;
+width:6em;
+}
+.windowList
+{
+height:55%;
+border-radius:7px;
+position: fixed;
+left:22%;
+top:22%;
+border: none;
+resize: both;
+display:none;
 }
 .header
-{
+{border-top-left-radius:7px;
+    border-top-right-radius:7px;
+ 
+    width:100%;
+    height:17%;
     background-color: rgb(46, 94, 184);
+    padding: 4px
+}
+.footer
+{
+    width:100%;
+    height:10%;
+    background-color: black;
+    padding: 4px;
+    opacity:0.9;
+}
+.footer:hover
+{
+  opacity: 1;
+}
+.standard
+{
+    font-weight: bold;
+}
+.color
+{
+    background-color: rgb(236, 129, 52);
+}
+p.focus
+{
+color: rgb(6, 96, 180)
+}
+input.focus
+{
+    border-bottom: 1px solid rgb(6, 96, 180)
+}
+.focus-out
+{
+    
+    border-bottom: 1px solid rgb(100, 100, 104);
+
+}
+li p
+{
+    color:rgb(100, 100, 104);
+}
+ li i
+{
+    font-size:36px;
+    
+}
+.windowList .row
+{
+background-color: rgb(41, 195, 212);
+height: 80%;
+overflow:auto;
+}
+li input
+{
+    width: 100%;
+background-color: rgb(41, 195, 212);
+}
+.editList
+{
+    width: 12em;
+}
+.close-icon
+{
+    float:right;
+    font-size:28px;
+    line-height: 0.5;
+    cursor: pointer;
+}
+.header p
+{
+    color: white;
+    font-weight:lighter;
+}
+.footer p
+{
+text-align:left;
+color: white;
+}
+.footer p label
+{
+    float: right;
 }

@@ -7,7 +7,7 @@ var tablesObj={};
 for(var i=1;i<=5;i++)
 {
 
-tablesObj[`Table-${i}`]=[];
+tablesObj["Table-"+i]=[];
 
 
 }
@@ -18,7 +18,7 @@ tablesObj=JSON.parse(localStorage.getItem('tables'));
     var tableDiv="";
 for(var table in tablesObj)
 {
-    tableDiv+="<div class='card' ondragover='allowDrop(event)' ondrop='drop(event)'><h3>"+table+"</h3>";
+    tableDiv+=`<div class='card' onclick='getOrdersList(this)' ondragover='allowDrop(event)' ondrop='drop(event)'><h3>${table}</h3>`;
 if(tablesObj[table].length==0)
 {
 tableDiv+="<p>Rs.0|Total items: 0</p></div>";
@@ -46,7 +46,7 @@ function calServings(orders)
 {
     var quant=0;
 orders.forEach(order => {
-    quant+=order.servings;
+    quant+=Number(order.servings);
 
 });
 return quant;

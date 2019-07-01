@@ -48,7 +48,7 @@ margin: 10px;
 {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.6);
 }
-i
+.col1 i,.col2 i
 {     position: relative;
         
         left: -30px;
@@ -61,4 +61,8 @@ input
 {
     width: 60%;
     border: none;
+}
+.tables-list .card
+{
+cursor: pointer;
 }

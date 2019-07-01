@@ -1,4 +1,5 @@
-var tablesObj;
+var tablesObj=JSON.parse(localStorage.getItem("tables"));
+
  var order=function(name,price,servings)
 {
 this.name=name;
@@ -22,28 +23,23 @@ var itemName=document.getElementById(itemId).childNodes[0].innerHTML;
 var itemPrice=document.getElementById(itemId).childNodes[1].innerHTML;
   var tableName=event.currentTarget.childNodes[0].innerHTML;
 
-  tablesObj=JSON.parse(localStorage.getItem("tables"));
 
-for(var table in tablesObj)
-{
-if(table==tableName)
-{
-    var isOrderFound=tablesObj[table].find(orderObj => {
+
+    var isOrderFound=tablesObj[tableName].find(orderObj => {
         if(orderObj.name==itemName)
         {
-            orderObj.servings+=1;
+            orderObj.servings=Number(orderObj.servings)+1;
             return true;
         }
     });
 if(!isOrderFound)
 {
-tablesObj[table].push(new order(itemName,itemPrice,1));
-}
-break;
+tablesObj[tableName].push(new order(itemName,itemPrice,1));
 }
 
-}
 localStorage.setItem("tables",JSON.stringify(tablesObj));
+
+
 var str=event.currentTarget.childNodes[1].innerHTML;
 var count=0;
 str=str.replace(/[0-9]+/g,function(match)
