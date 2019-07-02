@@ -1,14 +1,15 @@
 ul
 {
-padding: 5px;
+padding: 3px;
 list-style-type: none;
 margin: 0px;
+width:700px;
 }
 li
 {
 display: inline-block;
-padding: 10px;
-margin: 10px;
+padding: 5px;
+margin: 5px;
 width:6em;
 }
 .windowList
@@ -21,6 +22,8 @@ top:22%;
 border: none;
 resize: both;
 display:none;
+z-index: 4;
+width:56%
 }
 .header
 {border-top-left-radius:7px;
@@ -76,14 +79,15 @@ li p
 }
 .windowList .row
 {
-background-color: rgb(41, 195, 212);
+background-color: rgb(233, 231, 231);
 height: 80%;
 overflow:auto;
+
 }
 li input
 {
     width: 100%;
-background-color: rgb(41, 195, 212);
+background-color: rgb(233, 231, 231);
 }
 .editList
 {
@@ -109,4 +113,16 @@ color: white;
 .footer p label
 {
     float: right;
+}
+@media only screen and (max-width: 700px)
+{
+    li
+    {
+        width: 3em;
+    }
+.footer p
+{
+    font-size: x-small;
+}
+
 }

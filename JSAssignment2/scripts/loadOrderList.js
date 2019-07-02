@@ -27,6 +27,9 @@ function getOrdersList(element) {
 
 
     element.classList.add('color');
+
+    document.getElementsByClassName('overlay')[0].style.display = 'block';
+
     document.getElementsByClassName('windowList')[0].style.display = 'block';
     var totalCost = 0;
     var text = "";

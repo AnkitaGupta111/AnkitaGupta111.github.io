@@ -12,7 +12,7 @@
 <div class="row">
   <div class="col1">
     <h2>Tables</h2>
-    <input type="text" class="card"><i class="fa fa-search"></i>
+    <input type="text" class="card" placeholder="Search Table" onkeyup="searchTable(this)"><i class="fa fa-close" onclick="searchClose1()"></i>
 <div class='tables-list'></div>
 
 
@@ -20,7 +20,7 @@
 
   <div class="col2">
       <h2>Menu</h2>
-      <input type="text" class="card"><i class="fa fa-search"></i>
+      <input type="text" class="card" placeholder="Search Menu.. by food,by course" onkeyup="searchMenu(this)"><i class="fa fa-close" onclick="searchClose2()"></i>
 <div class='food-menu'></div>
 </div>
 
@@ -40,10 +40,13 @@
 </div>
 
 </div>
+<div class='overlay'></div>
 
 <script src="./scripts/loadMenu.js"></script>
 <script src="./scripts/fetchTables.js"></script>
 <script src="./scripts/tables.js"></script>
 <script src="./scripts/loadOrderList.js"></script>
+<script src="./scripts/search.js"></script>
+
 </body>
 </html>
