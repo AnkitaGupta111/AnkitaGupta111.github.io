@@ -1,52 +1,57 @@
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/form.css">
-<link rel="stylesheet" href="./css/layout.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-<h2>Restaurant Application</h2>
+  <h2>Restaurant Application</h2>
 
-<div class="row">
-  <div class="col1">
-    <h2>Tables</h2>
-    <input type="text" class="card" placeholder="Search Table" onkeyup="searchTable(this)"><i class="fa fa-close" onclick="searchClose1()"></i>
-<div class='tables-list'></div>
+  <div class="row">
+    <div class="col1">
+      <h2>Tables</h2>
+      <input type="text" class="card" placeholder="Search Table" onkeyup="searchTable(this)"><i class="fa fa-close"
+        onclick="searchClose1()"></i>
+      <div class='tables-list'></div>
 
-
-  </div>
-
-  <div class="col2">
-      <h2>Menu</h2>
-      <input type="text" class="card" placeholder="Search Menu.. by food,by course" onkeyup="searchMenu(this)"><i class="fa fa-close" onclick="searchClose2()"></i>
-<div class='food-menu'></div>
-</div>
-
-
-<div class="windowList">
-    <div class="header"></div>
-<div class="row">
-   <ul class='standard'>
-        <li>S.No.</li>
-        <li>Item</li>
-        <li>Price</li>   
-        </ul>
 
     </div>
-    <div class="footer"></div>
-  
-</div>
 
-</div>
-<div class='overlay'></div>
+    <div class="col2">
+      <h2>Menu</h2>
+      <input type="text" class="card" placeholder="Search Menu.. by food,by course" onkeyup="searchMenu(this)"><i
+        class="fa fa-close" onclick="searchClose2()"></i>
+      <div class='food-menu'></div>
+    </div>
 
-<script src="./scripts/loadMenu.js"></script>
-<script src="./scripts/fetchTables.js"></script>
-<script src="./scripts/tables.js"></script>
-<script src="./scripts/loadOrderList.js"></script>
-<script src="./scripts/search.js"></script>
+
+    <div class="windowList">
+      <div class="header"></div>
+      <div class="row">
+        <ul class='standard'>
+          <li>S.No.</li>
+          <li>Item</li>
+          <li>Price</li>
+        </ul>
+
+      </div>
+      <div class="footer"></div>
+
+    </div>
+
+  </div>
+  <div class='overlay'></div>
+
+  <script src="./scripts/loadMenu.js"></script>
+  <script src="./scripts/fetchTables.js"></script>
+  <script src="./scripts/tables.js"></script>
+  <script src="./scripts/loadOrderList.js"></script>
+  <script src="./scripts/search.js"></script>
 
 </body>
+
 </html>
